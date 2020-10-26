@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label class="ion-text-right">{{display}}</ion-label>
+  </ion-item>
+  <div *ngFor="let keyGroup of keyGroups">
+    <ion-button *ngFor="let key of keyGroup" (click)="onButtonPress(key)" class="calc-button">{{key}}</ion-button>
+  </div>
+</ion-content>

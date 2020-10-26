@@ -1,0 +1,7 @@
+{
+  "name": "op_calculator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
